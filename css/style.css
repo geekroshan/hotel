@@ -1,0 +1,268 @@
+ @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+ * 
+ {
+
+   	margin: 0px; padding: 0px; box-sizing: border-box;
+}
+body
+{ 
+	max-width: 1200px; 
+	margin: auto;
+}
+
+/* pop-up start */
+.pop-up
+{
+  position: relative;
+  position: fixed;
+	top: -800px;
+    padding-left: 350px;
+    cursor: pointer;
+	animation: drop 1.5s ease forwards;
+	z-index: 999;
+}
+
+@keyframes drop
+{
+	0%{ opacity: 0 }
+	70%{ transform: translateY(1000px);opacity: .5;}
+	100%{ transform: translateY(900px);opacity: 1;}
+}
+
+.pop-up-con
+{
+	width: 500px;
+	height: 400px;
+	background:rgb(216 199 166 / 90%);
+	border: 2px solid transparent;
+	border-radius: 3%;
+	position: absolute;	
+}
+ .pop-up-con span a
+{
+	right: 0px;
+	top: 0px;
+	position: absolute; 
+	color: red;
+}
+.pop-up-con h1
+{
+	color: #000;
+	padding: 40px;
+	text-align: center;
+}
+.delivery-type 
+{
+  text-align: center;
+}
+.delivery-type h3
+{
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 40%;
+
+} 
+.close
+{
+	background: red;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	border-radius: 20%;
+}
+/* pop-up end */
+header
+{ 
+	background: #fff; color: #000;
+	 width: 100%;
+	 display: flex;
+	 justify-content: space-between;
+	/* position: fixed; */
+}
+.h-left
+{
+	padding-left: 40px;
+}
+ a
+{
+ text-decoration: none;
+ color: #000;
+}
+.h-right ul 
+{
+   padding-top: 40px;
+}
+		 
+.h-right ul li 
+{ 
+
+ 	display: inline ;
+ 	padding: 20px;
+ }
+.h-right ul li a:hover
+{
+	
+	color: orange;
+	border-bottom: 2px solid orange;	 
+}
+ section
+{
+	width: 100%;
+	 background-image: linear-gradient(to bottom,rgba(24,41,55,.5) 0,rgba(255,255,255,0) 100%), url(../img/bgtop.png);
+	 background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;  
+    background-size: cover; 
+    display: flex;
+    justify-content: space-between;
+	
+}	
+.pizza-box 
+{ 
+	width: 50%;
+	padding-left: 50px;
+	animation: spin 10s infinite linear;
+}
+@keyframes spin 
+{
+	100%{ transform: rotate(360deg); }
+}
+.pizza-info
+{
+ width: 40%;
+ padding-top: 100px;
+}
+.pizza-info h1
+{
+	text-align: left;
+	color: #fff;
+	font-family: train one;
+	font-size: 60px; 
+}
+button
+{
+	width: 150px;
+	height: 60px;
+
+}
+ .active 
+ {
+ background: orange;
+}
+.active:hover{ background: #fff; color: #000; }
+
+.call
+{
+	background: transparent;
+	color: #fff;
+	display: flex;
+}
+.call 
+{
+	padding: 15px;
+}
+.call h2
+{
+	padding-left: 20px;
+}
+.call span
+{
+	color: orange;
+	font-family: train one;
+	font-size: 30px;
+	padding-left: 20px;
+
+}
+.container
+{
+	width: 100%;
+	background: #fff;
+	color: #000;
+}
+.text
+{
+	width: 50%;
+	padding: 40px;
+	text-align: center;
+}
+.text span
+{
+	color: red;
+	font-family: dancing Script;
+	font-size: 60px; 
+}
+.text h2
+{
+	padding-bottom:20px; 
+}
+.pizza-container
+{
+	padding: 60px;
+	padding-top: 100px;
+
+}
+.enquiry
+ {
+  	width: 40%; 
+  	height: 450px;
+    background-color: rgba(30,44,53,.8);
+    color: #ccc;
+    border: 1px solid rgba(255,255,255,.35);
+    margin-right: 20px;
+  }
+  .enquiry h2
+  {
+  	text-align: left;
+  	padding: 20px;
+  	margin-left: 50px;
+  }
+  .enquiry-box 
+  {
+
+  	padding: 10px;
+  	margin-left: 60px;
+  } 
+  .enquiry-box input
+  {
+  	width: 80%;
+   	height:30px;
+   	background: #fff
+   	padding:20px;
+   	border: 2px solid orange;
+  }
+  .booknow
+  {
+  	margin-top: 40px;
+  	margin-left: 30%;
+  	width: 150px;
+  	height: 50px;
+  	background: orange;
+  	text-align: center;
+  	color: #fff;
+  }
+
+  .booknow h3 
+  {
+  	padding-top: 10px;
+   	color: #fff;
+   	
+   }
+   .booknow:hover
+   {
+      background: #fff;
+      color: #000;
+    }
+    .container-bg
+    {
+	width: 100%;
+	background-image:linear-gradient(to bottom,rgb(219 226 232 / 50%) 0,rgb(216 199 166) 100%), url(https://post.healthline.com/wp-content/uploads/2020/08/is-pizza-healthy-1200x628-facebook-1200x628.jpg);
+	 background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;  
+    background-size: cover;  
+	color: #000;
+    }

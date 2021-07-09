@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" type="text/css" href="responsive/responsive.css">
+</head>
+<body>
+
+	<!-- header start -->
+ <header>
+    	<div class="h-left"><img src="http://lafrizzante.com/wp-content/uploads/2021/01/La-Frizzantewellogo.png"></div>
+ 	 <div class="h-right">
+ 		<ul>
+ 			<li><a href="">DOM</a></li>
+ 			<li><a href="">MENU</a></li>
+ 			<li><a href="">GALERIA</a></li>
+ 			<li><a href="">KONTAKT</a></li>
+ 			<li><a href="">ZAMÓW ONLINE</a></li>
+ 			 
+ 		  </ul>
+    	</div>
+ </header>
+ <!-- header end -->
+
+ <!-- pop-up start -->
+  <div class="pop-up">
+
+
+		<div class="pop-up-con">
+			<h1>Delivery Availability Checker</h1>
+			 <span onclick="close">
+			  <button type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+                </button> </span>
+
+			<div class="delivery-type">Delivery Type <h3>
+				<a href=""><i class="fa fa-dot-circle-o fa-lx" aria-hidden="true"></i></a> Delivary</h3>
+
+				<h3>
+				<a href=""><i class="fa fa-dot-circle-o fa-lx" aria-hidden="true"></i></a>PickUp by me</h3>
+
+					</div>
+
+		</div>
+	</div>
+	 
+	<!-- pop-up end -->  
+
+ <!-- section1 start -->
+
+ <section>
+    	<div class="pizza-box">
+    	<img src="img/pizaa-min.png" width="110%"> 
+    	</div>
+    	<div class="pizza-info">
+ 		 <h1>Podwój zabawa <br> na każdym <br> dostawa</h1>
+ 		 <button class="active"><a href=""><h3>Zamów Online</h3></a></button>
+ 		 <button><a href=""><h3>Menu Widoku</h3></a></button>
+ 		  <div class="call"> <i class="fa fa-phone fa-2x" aria-hidden="true"> </i> <h2> Call</h2> <span>123456789</span></div> 
+ 		  <div class=" call"><i class="fa fa-cutlery fa-2x" aria-hidden="true"></i><h2> Order</h2> <span>www.lafrizzante.com</span></div>
+    	</div>	
+ </section>
+ <!-- section1 end -->
+
+  <!-- section2 start -->
+  <section class="container">
+    	<div class="text"><span> Discover </span><h2> La Frizzante Pizza & Kebab House</h2> <p> Jesteśmy rodzinnym daniem na wynos, który specjalizuje się w szerokiej gamie pizzy, pysznych grillach na węgiel drzewny oraz kuchni tureckiej i anatolijskiej, w tym smacznych mięsach z jagnięciny, szaszłykami z jagnięciny i szaszłykami z kurczaka, kebabami, kebabami mieszanymi, różnymi ćwiartkami lub półfuntowe hamburgery, <br> smażony kurczak i ryba oraz Kids Meals.
+        Dlaczego nie spróbować naszego specjalnego szaszłyka   Kofte kebab, czyli świeżo mielonej jagnięciny z przyprawami i ziołami, szaszłykowanej i grillowanej na grillu węglowym, podawanej z codziennie przygotowywaną świeżą sałatką, sosami i chlebem pitta lub naszymi pysznymi kebabami specjalnymi, takimi jak kebab Adana i Halep Kebab. W naszym specjalnym menu kebabów znajduje się również nasz wspaniały House special, czyli szaszłyk, kebab z kurczaka i kilka kawałków donera, podawane w pojemniku ze specjalnym sosem pomidorowym, dodatkami z papryki i chleba pitta pod spodem, lub nasz kebab Alexander, który kebab podany na pokrojonym w kostkę chlebie pitta ze specjalnym sosem pomidorowym i jogurtem! </p> </div>
+       <div class="pizza-container">
+    	<img src="img/PizzaCatering.png">
+    </div>
+  </section>
+   <!-- section2 end -->
+
+    <!-- section3 start -->
+    <section class="container-bg">
+    	<div class="text"><span> Book online </span><h2>Fresh From La Frizzante</h2> <p> Jesteśmy rodzinnym daniem na wynos, który specjalizuje się w szerokiej gamie pizzy, pysznych grillach na węgiel drzewny oraz kuchni tureckiej i anatolijskiej, w tym smacznych mięsach z jagnięciny, szaszłykami z jagnięciny i szaszłykami z kurczaka, kebabami, kebabami mieszanymi, różnymi ćwiartkami lub półfunym sosem pomidorowym i jogurtem! </p> </div>
+
+    	 <div class="enquiry"> <h2> GOT A QUESTION? SEND AN <br>ENQUIRY
+	    </h2>
+
+	   <div class="enquiry-box"><input type="name" name="" placeholder="Your Name..."></div>
+
+	   <div class="enquiry-box"><input type="name" name="" placeholder="Your Email..."></div>
+
+	   <div class="enquiry-box"> <input type="number" name="" placeholder="No. of Person..." min="0" max="10" step="1"> </div>
+
+	   <div class="enquiry-box"><input type="date" name="date" ></div>
+
+	   <div class="enquiry-box"><input type="time" name="time"> </div>
+
+	   <div class="booknow"><h3><a href="">Book Now</a></h3></div>
+
+ 
+
+    </section>
+     <!-- section3 end -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  	
+		$(".close").click(function(){
+			$(".pop-up").remove()
+		});
+  </script>
+
+</body>
+</html>
